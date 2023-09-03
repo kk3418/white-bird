@@ -71,6 +71,7 @@ const handleExpand = () => {
   align-items: center;
 }
 .title {
+  width: 80%;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 2.55rem;
