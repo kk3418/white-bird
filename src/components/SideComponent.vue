@@ -103,11 +103,17 @@ const handleExpand = () => {
     margin: 0 13.3vw 0 17.9vw;
   }
   .menu-list {
-    padding-bottom: 3.65vh;
-    display: none;
+    height: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
   }
   .menu-list.expand {
-    display: block;
+    padding-bottom: 3.65vh;
+    height: auto;
+    transform: scale(1);
+    transform-origin: top;
+    transition: all 0.3s ease-out;
   }
 }
 </style>
