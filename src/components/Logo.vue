@@ -714,7 +714,19 @@
     38px 31px rgba(255, 255, 255, 0.75), 38px 32px rgba(255, 255, 255, 0.75),
     38px 33px rgba(255, 255, 255, 0.75), 38px 34px rgba(255, 255, 255, 0.13);
 }
+@media (max-width: 1100px) {
+  .pixel {
+    top: 10%;
+    left: 10%;
+  }
+}
 @media (max-width: 750px) {
+  .pixel {
+    top: 25%;
+    left: 25%;
+  }
+}
+@media (max-width: 500px) {
   .pixel {
     top: 15%;
     left: 10%;
