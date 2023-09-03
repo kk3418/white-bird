@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import Logo from "./Logo.vue";
 const isSelected = ref(0);
 const isExpand = ref(false);
 
@@ -29,6 +30,7 @@ const handleExpand = () => {
         @click="handleExpand"
       />
       <h2 class="title">白頭翁不吃小米</h2>
+      <logo></logo>
     </div>
     <ul :class="['menu-list', { expand: isExpand }]">
       <li
@@ -90,17 +92,20 @@ const handleExpand = () => {
 .menu-item:last-child {
   margin-bottom: 0;
 }
+.hamburger {
+  display: none;
+}
 @media (max-width: 750px) {
   .menu {
     width: 100vw;
   }
   .menu-header {
-    height: 8.43vh;
+    height: 5.48rem;
   }
   .title {
     font-size: 1.25rem;
     line-height: 1.7rem;
-    margin: 0 13.3vw 0 17.9vw;
+    margin: 0;
   }
   .menu-list {
     height: 0;
@@ -114,6 +119,13 @@ const handleExpand = () => {
     transform: scale(1);
     transform-origin: top;
     transition: all 0.3s ease-out;
+  }
+  .hamburger {
+    position: absolute;
+    height: 1.5rem;
+    left: 7vw;
+    transform: translateY(-0.1rem);
+    display: block;
   }
 }
 </style>

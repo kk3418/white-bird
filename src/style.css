@@ -52,20 +52,12 @@ body {
   display: flex;
 }
 
-.hamburger {
-  display: none;
-}
-
 @media (max-width: 750px) {
   :root {
     font-size: clamp(16px, 4.267vw, 32px)
   }
 
   .main-container {
-    display: block;
-  }
-
-  .hamburger {
     display: block;
   }
 }
